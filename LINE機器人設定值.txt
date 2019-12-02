@@ -1,0 +1,9 @@
+﻿LINE BOT機器人設定值:
+Channel ID:1653537556
+Channel secret頻道機密:550af1445eb609abac2c3a7b5fb4d444
+Channel access token :iMSNqO7nEYFrnbbwM7jmiIiwqEVr+ReTAhEG5RhL3mFpt2Q2ynuKiqmLA2NDK1XFayf+WbpyYK18hxtkqsMrma7hLhRSFFTRUUusrBTRkU1jJSa89eTMFT8PGVWvjP/YKuvN/Vclm0ORHncFsV/ViwdB04t89/1O4444=
+
+設定網址
+https://manager.line.biz/
+https://developers.line.biz/console/
+

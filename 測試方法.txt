@@ -1,0 +1,22 @@
+﻿驗證功能測試方法
+1.https://test.com/linebot_world/test_text_8.php  模擬LINE登入 產生取得驗證碼 
+例如取得8069606
+2.https://test.com/linebot_world/index.html  	輸入驗證碼
+3.https://test.com/linebot_world/send.php	修改資料庫的程式
+
+所有訊息
+$error = 驗證碼為空
+$error = 驗證碼為7碼
+$error = 查無此驗證碼  (重複驗證也是一樣結果)
+$error = 無會員uid;
+$error = 您的LINE帳號已經綁定會員:zxcvbnm，除非刪除此會員帳號，否則不能再次驗證
+會員有登入且驗證碼正確
+資料庫會有2筆修改
+$sql = "UPDATE `verification_lineid` SET `uid` = '$uid', `approved` = '1', `ok_time` = NOW() WHERE `verification_lineid`.`id` =" . $sno;
+$sql = "UPDATE `user` SET `is_auth` = '1' WHERE `id` =" . $uid;
+$ok =完成驗證
+
+==============================================================
+send.php 			#完成驗證程式參考這支
+includes\verification.php	#LINE機器人的回應程式 應該是完全不用修改 只有需要注意 會員資料表 是必須叫user
+config.ini 應該修改的設定檔	#資料庫帳密設定檔

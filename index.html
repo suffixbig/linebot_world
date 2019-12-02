@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>目錄</title>
+<!-- meta tags start -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="keywords" lang="zh-TW" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.6," />
+</head>
+
+<body>
+<h2>加LINE好友完成帳號驗證流程</h2>
+<ol>
+  <li>用LINE點連結加機器人帳號為好友</li>
+  <li>和LINE機器對話:給我驗證碼，或點LINE官方帳號選單給我驗證碼按鈕</li>
+  <li>將取得的驗證碼貼上送出</li>
+  <li>驗證完成</li>
+</ol>
+<form action="send.php" method="post">
+  請加LINE好友完成驗證，用LINE點連結加機器人好友
+  <table border="1">
+  <tbody>
+    <tr>
+      <td align="right">機器人LINE帳號</td>
+      <td width="264"><p><a href="https://line.me/R/ti/p/%40534ewlkl" target="_blank">https://line.me/R/ti/p/@534ewlkl</a></p></td>
+      </tr>
+    <tr>
+      <td align="right">輸入驗證碼</td>
+      <td><input name="snv" type="text" id="snv" placeholder="固定7碼數字" maxlength="7">
+        </td>
+      </tr>
+    <tr>
+      <td colspan="2" align="center"><input name="送出" type="submit" id="送出" value="送出"></td>
+      </tr>
+    </tbody>
+</table>
+</form>
+</body>
+</html>
